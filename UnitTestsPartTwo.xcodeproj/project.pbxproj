@@ -30,6 +30,11 @@
 		2164722F17C7AD320033CB9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216471DE17C7ACF20033CB9D /* Foundation.framework */; };
 		2164723017C7AD320033CB9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216471E217C7ACF20033CB9D /* UIKit.framework */; };
 		2164724217C7AD990033CB9D /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2164724117C7AD990033CB9D /* GHUnitIOS.framework */; };
+		2164724917C7AFA60033CB9D /* MMViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2164724817C7AFA60033CB9D /* MMViewControllerTests.m */; };
+		2164724A17C7B1960033CB9D /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 216471F417C7ACF20033CB9D /* MMViewController.m */; };
+		2164724E17C7B1E20033CB9D /* MMSecondaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2164724C17C7B1E20033CB9D /* MMSecondaryViewController.m */; };
+		2164724F17C7B1E20033CB9D /* MMSecondaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2164724D17C7B1E20033CB9D /* MMSecondaryViewController.xib */; };
+		2164725017C7B1E70033CB9D /* MMSecondaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2164724C17C7B1E20033CB9D /* MMSecondaryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +81,11 @@
 		2164722317C7AD310033CB9D /* GHUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GHUnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		2164722D17C7AD320033CB9D /* GHUnitTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHUnitTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2164724117C7AD990033CB9D /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
+		2164724717C7AFA60033CB9D /* MMViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMViewControllerTests.h; sourceTree = "<group>"; };
+		2164724817C7AFA60033CB9D /* MMViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMViewControllerTests.m; sourceTree = "<group>"; };
+		2164724B17C7B1E20033CB9D /* MMSecondaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSecondaryViewController.h; sourceTree = "<group>"; };
+		2164724C17C7B1E20033CB9D /* MMSecondaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSecondaryViewController.m; sourceTree = "<group>"; };
+		2164724D17C7B1E20033CB9D /* MMSecondaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMSecondaryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +177,9 @@
 				216471F417C7ACF20033CB9D /* MMViewController.m */,
 				216471F617C7ACF20033CB9D /* Images.xcassets */,
 				216471E517C7ACF20033CB9D /* Supporting Files */,
+				2164724B17C7B1E20033CB9D /* MMSecondaryViewController.h */,
+				2164724C17C7B1E20033CB9D /* MMSecondaryViewController.m */,
+				2164724D17C7B1E20033CB9D /* MMSecondaryViewController.xib */,
 			);
 			path = UnitTestsPartTwo;
 			sourceTree = "<group>";
@@ -215,6 +228,8 @@
 				2164721E17C7AD310033CB9D /* InfoPlist.strings */,
 				2164722117C7AD310033CB9D /* main.m */,
 				2164722317C7AD310033CB9D /* GHUnitTests-Prefix.pch */,
+				2164724717C7AFA60033CB9D /* MMViewControllerTests.h */,
+				2164724817C7AFA60033CB9D /* MMViewControllerTests.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -339,6 +354,7 @@
 				216471F717C7ACF20033CB9D /* Images.xcassets in Resources */,
 				216471E917C7ACF20033CB9D /* InfoPlist.strings in Resources */,
 				216471F217C7ACF20033CB9D /* Main.storyboard in Resources */,
+				2164724F17C7B1E20033CB9D /* MMSecondaryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +391,7 @@
 				216471EF17C7ACF20033CB9D /* MMAppDelegate.m in Sources */,
 				216471F517C7ACF20033CB9D /* MMViewController.m in Sources */,
 				216471EB17C7ACF20033CB9D /* main.m in Sources */,
+				2164724E17C7B1E20033CB9D /* MMSecondaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +407,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2164724917C7AFA60033CB9D /* MMViewControllerTests.m in Sources */,
+				2164724A17C7B1960033CB9D /* MMViewController.m in Sources */,
 				2164722217C7AD310033CB9D /* main.m in Sources */,
+				2164725017C7B1E70033CB9D /* MMSecondaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

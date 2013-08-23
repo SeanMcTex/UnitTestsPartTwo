@@ -1,18 +1,27 @@
 //
-//  MMViewController.m
+//  MMSecondaryViewController.m
 //  UnitTestsPartTwo
 //
 //  Created by Sean McMains on 8/23/13.
 //  Copyright (c) 2013 Mutual Mobile. All rights reserved.
 //
 
-#import "MMViewController.h"
+#import "MMSecondaryViewController.h"
 
-@interface MMViewController ()
+@interface MMSecondaryViewController ()
 
 @end
 
-@implementation MMViewController
+@implementation MMSecondaryViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
