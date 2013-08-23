@@ -41,8 +41,8 @@ static BOOL calledSuper = NO;
 -(instancetype)init {
     self = [super init];
     if(self){
-        NSArray *subclassesToTest = ClassGetSubclasses([UIViewController class]);
-        [self createTestCasesForClasses:subclassesToTest];
+        NSArray *viewControllers = ClassGetSubclasses([UIViewController class]);
+        [self createTestCasesForClasses:viewControllers];
     }
     return self;
 }
@@ -60,34 +60,38 @@ static BOOL calledSuper = NO;
 - (void)createTestCasesForClasses:(NSArray *)subclasses{
     for (Class klass in subclasses) {
         
-        [self createTestsForClass:klass
-                         selector:@selector(viewDidLoad)
-        testSelectorIncludesParam:NO
-                    withTestBlock:nil];
-        [self createTestsForClass:klass
-                         selector:@selector(viewWillAppear:)
-        testSelectorIncludesParam:YES
-                    withTestBlock:^(id testInstance) {
-                        [testInstance viewWillAppear:NO];
-                    }];
-        [self createTestsForClass:klass
-                         selector:@selector(viewDidAppear:)
-        testSelectorIncludesParam:YES
-                    withTestBlock:^(id testInstance) {
-                        [testInstance viewDidAppear:NO];
-                    }];
-        [self createTestsForClass:klass
-                         selector:@selector(viewWillDisappear:)
-        testSelectorIncludesParam:YES
-                    withTestBlock:^(id testInstance) {
-                        [testInstance viewWillDisappear:NO];
-                    }];
-        [self createTestsForClass:klass
-                         selector:@selector(viewDidDisappear:)
-        testSelectorIncludesParam:YES
-                    withTestBlock:^(id testInstance) {
-                        [testInstance viewDidDisappear:NO];
-                    }];
+        BOOL shouldClassBeTested = [[NSStringFromClass(klass) substringToIndex:2] isEqualToString:@"MM"];
+        
+        if ( shouldClassBeTested ) {
+            [self createTestsForClass:klass
+                             selector:@selector(viewDidLoad)
+            testSelectorIncludesParam:NO
+                        withTestBlock:nil];
+            [self createTestsForClass:klass
+                             selector:@selector(viewWillAppear:)
+            testSelectorIncludesParam:YES
+                        withTestBlock:^(id testInstance) {
+                            [testInstance viewWillAppear:NO];
+                        }];
+            [self createTestsForClass:klass
+                             selector:@selector(viewDidAppear:)
+            testSelectorIncludesParam:YES
+                        withTestBlock:^(id testInstance) {
+                            [testInstance viewDidAppear:NO];
+                        }];
+            [self createTestsForClass:klass
+                             selector:@selector(viewWillDisappear:)
+            testSelectorIncludesParam:YES
+                        withTestBlock:^(id testInstance) {
+                            [testInstance viewWillDisappear:NO];
+                        }];
+            [self createTestsForClass:klass
+                             selector:@selector(viewDidDisappear:)
+            testSelectorIncludesParam:YES
+                        withTestBlock:^(id testInstance) {
+                            [testInstance viewDidDisappear:NO];
+                        }];
+        }
     }
 }
 
@@ -150,10 +154,6 @@ static BOOL calledSuper = NO;
         class_addMethod(self.class, newSelector, newMethodIMP, "v@:");
     }
 }
-
-
-
-
 /**
  http://www.cocoawithlove.com/2010/01/getting-subclasses-of-objective-c-class.html
  */
@@ -179,21 +179,13 @@ NSArray *ClassGetSubclasses(Class parentClass)
             continue;
         }
         
-        NSString *className = NSStringFromClass(classes[i]);
-        
-        NSLog(@"FOO: %@", [className substringToIndex:2]);
-        BOOL classShouldBeTested = [[className substringToIndex:2] isEqualToString:@"MM"];
-        if ( classShouldBeTested ) {
-            [result addObject:classes[i]];
-        }
+        [result addObject:classes[i]];
     }
     
     free(classes);
     
     return result;
 }
-
-
 
 
 @end

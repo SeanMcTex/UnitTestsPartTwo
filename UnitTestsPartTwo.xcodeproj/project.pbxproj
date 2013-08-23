@@ -81,7 +81,6 @@
 		2164722317C7AD310033CB9D /* GHUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GHUnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		2164722D17C7AD320033CB9D /* GHUnitTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHUnitTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2164724117C7AD990033CB9D /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
-		2164724717C7AFA60033CB9D /* MMViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMViewControllerTests.h; sourceTree = "<group>"; };
 		2164724817C7AFA60033CB9D /* MMViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMViewControllerTests.m; sourceTree = "<group>"; };
 		2164724B17C7B1E20033CB9D /* MMSecondaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSecondaryViewController.h; sourceTree = "<group>"; };
 		2164724C17C7B1E20033CB9D /* MMSecondaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSecondaryViewController.m; sourceTree = "<group>"; };
@@ -228,7 +227,6 @@
 				2164721E17C7AD310033CB9D /* InfoPlist.strings */,
 				2164722117C7AD310033CB9D /* main.m */,
 				2164722317C7AD310033CB9D /* GHUnitTests-Prefix.pch */,
-				2164724717C7AFA60033CB9D /* MMViewControllerTests.h */,
 				2164724817C7AFA60033CB9D /* MMViewControllerTests.m */,
 			);
 			name = "Supporting Files";
