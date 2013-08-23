@@ -60,31 +60,35 @@ static BOOL calledSuper = NO;
 - (void)createTestCasesForClasses:(NSArray *)subclasses{
     for (Class klass in subclasses) {
         
-        BOOL shouldClassBeTested = [[NSStringFromClass(klass) substringToIndex:2] isEqualToString:@"MM"];
+        BOOL classShouldBeTested = [[NSStringFromClass(klass) substringToIndex:2] isEqualToString:@"MM"];
         
-        if ( shouldClassBeTested ) {
+        if ( classShouldBeTested ) {
             [self createTestsForClass:klass
                              selector:@selector(viewDidLoad)
             testSelectorIncludesParam:NO
                         withTestBlock:nil];
+            
             [self createTestsForClass:klass
                              selector:@selector(viewWillAppear:)
             testSelectorIncludesParam:YES
                         withTestBlock:^(id testInstance) {
                             [testInstance viewWillAppear:NO];
                         }];
+            
             [self createTestsForClass:klass
                              selector:@selector(viewDidAppear:)
             testSelectorIncludesParam:YES
                         withTestBlock:^(id testInstance) {
                             [testInstance viewDidAppear:NO];
                         }];
+            
             [self createTestsForClass:klass
                              selector:@selector(viewWillDisappear:)
             testSelectorIncludesParam:YES
                         withTestBlock:^(id testInstance) {
                             [testInstance viewWillDisappear:NO];
                         }];
+            
             [self createTestsForClass:klass
                              selector:@selector(viewDidDisappear:)
             testSelectorIncludesParam:YES
