@@ -21,6 +21,15 @@
 		2164720017C7ACF20033CB9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216471E217C7ACF20033CB9D /* UIKit.framework */; };
 		2164720817C7ACF20033CB9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2164720617C7ACF20033CB9D /* InfoPlist.strings */; };
 		2164720A17C7ACF20033CB9D /* UnitTestsPartTwoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2164720917C7ACF20033CB9D /* UnitTestsPartTwoTests.m */; };
+		2164721817C7AD310033CB9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216471DE17C7ACF20033CB9D /* Foundation.framework */; };
+		2164721917C7AD310033CB9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216471E017C7ACF20033CB9D /* CoreGraphics.framework */; };
+		2164721A17C7AD310033CB9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216471E217C7ACF20033CB9D /* UIKit.framework */; };
+		2164722017C7AD310033CB9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2164721E17C7AD310033CB9D /* InfoPlist.strings */; };
+		2164722217C7AD310033CB9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2164722117C7AD310033CB9D /* main.m */; };
+		2164722E17C7AD320033CB9D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216471FD17C7ACF20033CB9D /* XCTest.framework */; };
+		2164722F17C7AD320033CB9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216471DE17C7ACF20033CB9D /* Foundation.framework */; };
+		2164723017C7AD320033CB9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216471E217C7ACF20033CB9D /* UIKit.framework */; };
+		2164724217C7AD990033CB9D /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2164724117C7AD990033CB9D /* GHUnitIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +39,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 216471DA17C7ACF20033CB9D;
 			remoteInfo = UnitTestsPartTwo;
+		};
+		2164723117C7AD320033CB9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 216471D317C7ACF20033CB9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2164721617C7AD310033CB9D;
+			remoteInfo = GHUnitTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,6 +69,13 @@
 		2164720517C7ACF20033CB9D /* UnitTestsPartTwoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTestsPartTwoTests-Info.plist"; sourceTree = "<group>"; };
 		2164720717C7ACF20033CB9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2164720917C7ACF20033CB9D /* UnitTestsPartTwoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTestsPartTwoTests.m; sourceTree = "<group>"; };
+		2164721717C7AD310033CB9D /* GHUnitTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHUnitTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2164721D17C7AD310033CB9D /* GHUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GHUnitTests-Info.plist"; sourceTree = "<group>"; };
+		2164721F17C7AD310033CB9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2164722117C7AD310033CB9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2164722317C7AD310033CB9D /* GHUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GHUnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		2164722D17C7AD320033CB9D /* GHUnitTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHUnitTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2164724117C7AD990033CB9D /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +99,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2164721417C7AD310033CB9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2164721917C7AD310033CB9D /* CoreGraphics.framework in Frameworks */,
+				2164724217C7AD990033CB9D /* GHUnitIOS.framework in Frameworks */,
+				2164721A17C7AD310033CB9D /* UIKit.framework in Frameworks */,
+				2164721817C7AD310033CB9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2164722A17C7AD320033CB9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2164722E17C7AD320033CB9D /* XCTest.framework in Frameworks */,
+				2164723017C7AD320033CB9D /* UIKit.framework in Frameworks */,
+				2164722F17C7AD320033CB9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +128,7 @@
 			children = (
 				216471E417C7ACF20033CB9D /* UnitTestsPartTwo */,
 				2164720317C7ACF20033CB9D /* UnitTestsPartTwoTests */,
+				2164721B17C7AD310033CB9D /* GHUnitTests */,
 				216471DD17C7ACF20033CB9D /* Frameworks */,
 				216471DC17C7ACF20033CB9D /* Products */,
 			);
@@ -94,6 +139,8 @@
 			children = (
 				216471DB17C7ACF20033CB9D /* UnitTestsPartTwo.app */,
 				216471FC17C7ACF20033CB9D /* UnitTestsPartTwoTests.xctest */,
+				2164721717C7AD310033CB9D /* GHUnitTests.app */,
+				2164722D17C7AD320033CB9D /* GHUnitTestsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +148,7 @@
 		216471DD17C7ACF20033CB9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2164724117C7AD990033CB9D /* GHUnitIOS.framework */,
 				216471DE17C7ACF20033CB9D /* Foundation.framework */,
 				216471E017C7ACF20033CB9D /* CoreGraphics.framework */,
 				216471E217C7ACF20033CB9D /* UIKit.framework */,
@@ -152,6 +200,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2164721B17C7AD310033CB9D /* GHUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				2164721C17C7AD310033CB9D /* Supporting Files */,
+			);
+			path = GHUnitTests;
+			sourceTree = "<group>";
+		};
+		2164721C17C7AD310033CB9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2164721D17C7AD310033CB9D /* GHUnitTests-Info.plist */,
+				2164721E17C7AD310033CB9D /* InfoPlist.strings */,
+				2164722117C7AD310033CB9D /* main.m */,
+				2164722317C7AD310033CB9D /* GHUnitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,6 +257,41 @@
 			productReference = 216471FC17C7ACF20033CB9D /* UnitTestsPartTwoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2164721617C7AD310033CB9D /* GHUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2164723B17C7AD320033CB9D /* Build configuration list for PBXNativeTarget "GHUnitTests" */;
+			buildPhases = (
+				2164721317C7AD310033CB9D /* Sources */,
+				2164721417C7AD310033CB9D /* Frameworks */,
+				2164721517C7AD310033CB9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GHUnitTests;
+			productName = GHUnitTests;
+			productReference = 2164721717C7AD310033CB9D /* GHUnitTests.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2164722C17C7AD320033CB9D /* GHUnitTestsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2164723E17C7AD320033CB9D /* Build configuration list for PBXNativeTarget "GHUnitTestsTests" */;
+			buildPhases = (
+				2164722917C7AD320033CB9D /* Sources */,
+				2164722A17C7AD320033CB9D /* Frameworks */,
+				2164722B17C7AD320033CB9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2164723217C7AD320033CB9D /* PBXTargetDependency */,
+			);
+			name = GHUnitTestsTests;
+			productName = GHUnitTestsTests;
+			productReference = 2164722D17C7AD320033CB9D /* GHUnitTestsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +303,9 @@
 				ORGANIZATIONNAME = "Mutual Mobile";
 				TargetAttributes = {
 					216471FB17C7ACF20033CB9D = {
+						TestTargetID = 216471DA17C7ACF20033CB9D;
+					};
+					2164722C17C7AD320033CB9D = {
 						TestTargetID = 216471DA17C7ACF20033CB9D;
 					};
 				};
@@ -220,6 +325,8 @@
 			targets = (
 				216471DA17C7ACF20033CB9D /* UnitTestsPartTwo */,
 				216471FB17C7ACF20033CB9D /* UnitTestsPartTwoTests */,
+				2164721617C7AD310033CB9D /* GHUnitTests */,
+				2164722C17C7AD320033CB9D /* GHUnitTestsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,6 +347,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2164720817C7ACF20033CB9D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2164721517C7AD310033CB9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2164722017C7AD310033CB9D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2164722B17C7AD320033CB9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +386,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2164721317C7AD310033CB9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2164722217C7AD310033CB9D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2164722917C7AD320033CB9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -271,6 +408,11 @@
 			isa = PBXTargetDependency;
 			target = 216471DA17C7ACF20033CB9D /* UnitTestsPartTwo */;
 			targetProxy = 2164720117C7ACF20033CB9D /* PBXContainerItemProxy */;
+		};
+		2164723217C7AD320033CB9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2164721617C7AD310033CB9D /* GHUnitTests */;
+			targetProxy = 2164723117C7AD320033CB9D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -295,6 +437,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				2164720717C7ACF20033CB9D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2164721E17C7AD310033CB9D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2164721F17C7AD310033CB9D /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -436,6 +586,88 @@
 			};
 			name = Release;
 		};
+		2164723C17C7AD320033CB9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/sean.mcmains/Documents/UnitTestsPartTwo,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GHUnitTests/GHUnitTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GHUnitTests/GHUnitTests-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2164723D17C7AD320033CB9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/sean.mcmains/Documents/UnitTestsPartTwo,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GHUnitTests/GHUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "GHUnitTests/GHUnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2164723F17C7AD320033CB9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UnitTestsPartTwo.app/UnitTestsPartTwo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GHUnitTests/GHUnitTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GHUnitTestsTests/GHUnitTestsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2164724017C7AD320033CB9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UnitTestsPartTwo.app/UnitTestsPartTwo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GHUnitTests/GHUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "GHUnitTestsTests/GHUnitTestsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,6 +693,22 @@
 			buildConfigurations = (
 				2164721117C7ACF20033CB9D /* Debug */,
 				2164721217C7ACF20033CB9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2164723B17C7AD320033CB9D /* Build configuration list for PBXNativeTarget "GHUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2164723C17C7AD320033CB9D /* Debug */,
+				2164723D17C7AD320033CB9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2164723E17C7AD320033CB9D /* Build configuration list for PBXNativeTarget "GHUnitTestsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2164723F17C7AD320033CB9D /* Debug */,
+				2164724017C7AD320033CB9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
